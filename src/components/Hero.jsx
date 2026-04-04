@@ -118,11 +118,13 @@ export default function Hero() {
         <div
           ref={imgRef}
           className="fade-in-right"
-          style={{ flex: '0 0 auto', display: 'flex', justifyContent: 'center' }}
+          style={{ flex: '1 1 340px', maxWidth: '560px', display: 'flex', justifyContent: 'center' }}
         >
           <div style={{
             position: 'relative',
             animation: 'float 4s ease-in-out infinite',
+            width: '100%',
+            maxWidth: '400px',
           }}>
             {/* Glow ring */}
             <div style={{
@@ -134,17 +136,16 @@ export default function Hero() {
               filter: 'blur(8px)',
             }} />
             <div style={{
-              width: 'clamp(220px, 30vw, 400px)',
-              height: 'clamp(500px, 30vw, 800px)',
+              width: '100%',
+              aspectRatio: '3/4',
               borderRadius: '10%',
               overflow: 'hidden',
               border: '2px solid rgba(59,130,246,0.5)',
               position: 'relative',
               background: 'linear-gradient(135deg, #1e3a5f, #0f172a)',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
-              fontSize: '5rem',
             }}>
-              <img src={fotoProfil} alt="" />
+              <img src={fotoProfil} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
           </div>
         </div>
@@ -153,12 +154,15 @@ export default function Hero() {
       {/* Scroll indicator */}
       <div style={{
         position: 'absolute', bottom: '2rem', left: '50%', transform: 'translateX(-50%)',
-        display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem',
-        color: '#475569', fontSize: '0.75rem', fontWeight: 500,
-        animation: 'float 2s ease-in-out infinite',
       }}>
-        <span>Scroll Down</span>
-        <span style={{ fontSize: '1.25rem' }}>↓</span>
+        <div style={{
+          display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem',
+          color: '#475569', fontSize: '0.75rem', fontWeight: 500,
+          animation: 'float 2s ease-in-out infinite',
+        }}>
+          <span>Scroll Down</span>
+          <span style={{ fontSize: '1.25rem' }}>↓</span>
+        </div>
       </div>
 
       <style>{`
