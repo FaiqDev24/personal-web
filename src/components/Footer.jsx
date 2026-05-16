@@ -10,6 +10,11 @@ export default function Footer() {
       icon: <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" style={{ width: '22px', height: '22px' }} />, 
       href: 'https://www.instagram.com/padlullll/' 
     },
+    { 
+      label: 'LinkedIn', 
+      icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style={{ width: '22px', height: '22px' }} />, 
+      href: 'https://www.linkedin.com/in/faiq-fadhlul' 
+    },
   ];
 
   const navLinks = [
@@ -89,6 +94,8 @@ export default function Footer() {
                   key={s.label}
                   href={s.href}
                   title={s.label}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{
                     width: 44, height: 44, borderRadius: '12px',
                     background: 'rgba(255,255,255,0.04)',

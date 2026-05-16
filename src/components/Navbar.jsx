@@ -11,12 +11,13 @@ export default function Navbar() {
   }, []);
 
   const links = [
-    { label: 'Home', href: '#hero' },
-    { label: 'Profile', href: '#profile' },
-    { label: 'Skills', href: '#skills' },
-    { label: 'Education', href: '#education' },
-    { label: 'Projects', href: '#projects' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Home',        href: '#hero' },
+    { label: 'Profile',     href: '#profile' },
+    { label: 'Skills',      href: '#skills' },
+    { label: 'Education',   href: '#education' },
+    { label: 'Projects',    href: '#projects' },
+    { label: 'Achievement', href: '#achievement' },
+    { label: 'Contact',     href: '#contact' },
   ];
 
   const handleNav = (href) => {

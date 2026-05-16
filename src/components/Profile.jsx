@@ -84,8 +84,7 @@ function ProfileAbout() {
       </div>
 
       <p style={{ color: '#94a3b8', lineHeight: 1.8, fontSize: '0.95rem', marginBottom: '1rem' }}>
-        Halo! Saya seorang web developer yang bersemangat dalam membangun aplikasi web modern. Saya memiliki pengalaman dalam pengembangan front-end maupun back-end
-        menggunakan berbagai teknologi terkini.
+        Halo! Saya adalah seorang siswa di SMK Wikrama Bogor dengan jurusan PPLG, saat ini saya sedang belajar menjadi seorang Full-Stack Developer.
       </p>
       <p style={{ color: '#64748b', lineHeight: 1.8, fontSize: '0.9rem' }}>
         Saya selalu berusaha untuk terus belajar dan berkembang mengikuti perkembangan teknologi,
